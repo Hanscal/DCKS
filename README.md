@@ -13,8 +13,6 @@ Install the required libraries (Python 3.8.5 | CUDA 10.2)
 pip install -r requirements.txt 
 ```
 
-Download  [**Pretrained GloVe Embeddings**](http://nlp.stanford.edu/data/glove.6B.zip) and save it in `/vectors`.
-
 ### Dataset
 
 The preprocessed dataset is already provided, you can download the data from [Baidu Netdisk](https://pan.baidu.com/s/1A0vEm4Yo6DZGSLcyWIfffg) (passcode: **4b8l**) , and then put it in the folder `/data/ED/dataset`.   
@@ -23,25 +21,17 @@ If you want to create the dataset yourself, delete this file, download the [COME
 ### Training
 
 ```sh
-python main.py --model [model_name] [--woDiv] [--woEMO] [--woCOG] [--cuda]
+bash run_train.sh
 ```
 
-where model_name could be one of the following: **trs | multi-trs | moel | mime | empdg | cem**. In addition, the extra flags can be used for ablation studies.
+where data_ratio can be used for low resource ablation studies.
 
-## Testing
+### Evaluation
 
 For reproducibility, download the trained [checkpoint](https://drive.google.com/file/d/1p_Qj5hBQE7e8ailIb5LbZu7NABmeet4k/view?usp=sharing),  put it in a folder named  `saved` and run the following:
 
 ```sh
-python main.py --model cem --test --model_path save/CEM_19999_41.8034 [--cuda]
-```
-
-### Evaluation
-
-Create a folder `results` and move the obtained results.txt for each model to this folder. Rename the files to the name of the model and run the following:
-
-```sh
-python src/scripts/evaluate.py 
+bash run_evaluate.sh
 ```
 
 ## Citation
