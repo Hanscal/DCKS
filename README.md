@@ -16,7 +16,7 @@ pip install -r requirements.txt
 ### Dataset
 
 The preprocessed dataset is already provided, you can download the data from [Baidu Netdisk](https://pan.baidu.com/s/1A0vEm4Yo6DZGSLcyWIfffg) (passcode: **4b8l**) , and then put it in the folder `/data/ED/dataset`.   
-If you want to create the dataset yourself, delete this file, download the [COMET checkpoint](https://github.com/allenai/comet-atomic-2020) and place it in `/data/ed_comet`. The preprocessed dataset would be generated after the training script.
+If you want to create the dataset yourself, delete this file, download the [COMET checkpoint](https://github.com/allenai/comet-atomic-2020) and place it in `/data`. The preprocessed dataset would be generated after the training script.
 
 ### Training
 
