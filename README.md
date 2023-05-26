@@ -28,8 +28,6 @@ where data_ratio can be used for low resource ablation studies.
 
 ### Evaluation
 
-For reproducibility, download the trained [checkpoint](https://drive.google.com/file/d/1p_Qj5hBQE7e8ailIb5LbZu7NABmeet4k/view?usp=sharing),  put it in a folder named  `saved` and run the following:
-
 ```sh
 bash run_evaluate.sh
 ```
