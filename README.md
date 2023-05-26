@@ -38,7 +38,6 @@ If you find our work useful for your research, please kindly cite our paper as f
 @article{DCKS2023,
       title={Improving Empathetic Dialogue Generation by Dynamically Infusing Commonsense Knowledge}, 
       author={Hua Cai, Xuli Shen, Qing Xu, Weilin Shen, Xiaomei Wang, Weifeng Ge, Xiaoqing Zheng, Xiangyang Xue},
-      journal={arXiv preprint arXiv:2109.05739},
       year={2023},
 }
 ```
